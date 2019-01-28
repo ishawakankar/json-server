@@ -1,0 +1,43 @@
+{
+    "queryResponse": {
+        "status": "ok",
+        "body": {
+            "name": "Isha Wakankar",
+            "url": "https://github.com/ishawakankar"
+        }
+    },
+    "graphData": [
+        {
+          "timestamp": "1548325428000",
+          "accuracy": "10"
+        },
+        {
+          "timestamp": "1548329028000",
+          "accuracy": "20"
+        },
+        {
+          "timestamp": "1548277712000",
+          "accuracy": "23"
+        },
+        {
+          "timestamp": "1548281312000",
+          "accuracy": "19"
+        },
+        {
+          "timestamp": "1548284912000",
+          "accuracy": "25"
+        },
+        {
+          "timestamp": "1548288512000",
+          "accuracy": "32"
+        },
+        {
+          "timestamp": "1548292112000",
+          "accuracy": "45"
+        },
+        {
+          "timestamp": "1548295712000",
+          "accuracy": "48"
+        }
+      ]
+}
