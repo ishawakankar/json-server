@@ -1,0 +1,92 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a sample server.",
+        "version": "1.0.0",
+        "title": "Mock API Documentation",
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "basePath": "/api/v1/",
+    "tags": [{
+        "name": "Query",
+        "description": "API Documentation for query"
+    },
+    {
+        "name": "Graph Data",
+        "description": "API Documentation for graph data"
+    }
+    ],
+    "schemes": ["http", "https"],
+    "paths": {
+        "/queryResponse": {
+            "get": {
+                "tags": ["Query"],
+                "summary": "API for Query",
+                "description": "This API provides response for the specified query.",
+                "operationId": "postOneProgramModule",
+                "consumes": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Program modules object that needs to be created during the time of post request",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/queryResponse"
+                    }
+                }],
+                "responses": {
+                    "404": {
+                        "description": "Error in getqueryResponse "
+                    },
+                    "200": {
+                        "description": "Successfull /get response"
+                    }
+                }
+            }
+        },
+        "/graphData": {
+            "get": {
+                "tags": ["Graph Data"],
+                "summary": "API for getting Graph Data",
+                "description": "This API provides response for the data to be plotted on graph.",
+                "operationId": "postOneProgramModule",
+                "consumes": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Program modules object that needs to be created during the time of post request",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/graphData"
+                    }
+                }],
+                "responses": {
+                    "404": {
+                        "description": "Error in getgraphData "
+                    },
+                    "200": {
+                        "description": "Successfull /get data"
+                    }
+                }
+            }
+        }
+    }
+}
+        
